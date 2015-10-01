@@ -35,6 +35,18 @@ header > nav > ul > li {
     list-style: none;
 }
 
+header > nav > ul > li:first-of-type {
+    background-color: chartreuse;
+}
+
+header > nav > ul > li:nth-child(4) {
+    background-color: rebeccapurple;
+}
+
+header > nav > ul > li:nth-child(4) > a {
+    color: white;
+}
+
 body > header {
     background: red;
     height: 400px;
@@ -123,9 +135,7 @@ input[type="text"] {
     width: 100%;
 }
 
-form[method="post"] {
-    background: white;
-}
+
 
 textarea[name="stage-comments"], textarea[name="project-comments"] {
     width: 100%;
@@ -201,4 +211,29 @@ p[id="feedback"] > a {
         display: none;
     }
 
+    body > main > p {
+        width: 95%;
+        margin: auto;
+    }
+
+    form > fieldset {
+        width: 95%;
+        margin: auto;
+    }
+
+    body > footer {
+        display: block;
+    }
+
+    body > form {
+        width: 95%;
+        margin: auto;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        color: aqua;
+        background-color: darkblue;
+        border-radius: 10px;
+    }
 }
