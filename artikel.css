@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    top: 60px;
+    font-family: 'Arial';
+    font-size: 1em;
+    width: 100%;
+}
+
+body > header > form {
+    position: absolute;
+    padding: 10px;
+    background: white;
+    right: 0;
+    top: 0;
+}
+
+header > nav > ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    text-align: center;
+    text-shadow: 5px 2px 3px red;
+    width: 100%;
+}
+
+header > nav > ul > li {
+    float: left;
+    padding: 20px;
+    list-style: none;
+}
+
+body > header {
+    background: red;
+    height: 400px;
+    padding: 10px;
+}
+
+main {
+    background: orange;
+    padding: 10px;
+}
+
+main > article {
+    width: 70%;
+}
+
+section.related > h2 {
+    width: 100%;
+}
+
+section.related {
+    padding: 10px;
+    background: yellow;
+    -webkit-display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+section.related > article {
+    -webkit-flex: 1;
+    flex: 1;
+    border: 1px dashed black;
+    margin: 5px;
+    padding: 5px;
+}
+
+aside {
+    background: green;
+    float: right;
+    width: 25%;
+    position: absolute;
+    right: 0px;
+    top: 420px;
+    padding: 20px;
+    border-radius: 40px 0px 0px 40px;
+    box-shadow: -10px 10px 30px black;
+}
+
+aside:hover {
+    -webkit-transform: rotate(1080deg);
+    transform: rotate(1080deg);
+    transition: 2s;
+    transition-timing-function: ease;
+}
+
+body > footer {
+    background: pink;
+    padding: 10px;
+    display: flex;
+}
+
+body > footer > section {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+form > fieldset {
+    width: 70%;
+}
+
+body > main > p {
+    width: 70%;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+form[method="post"] {
+    background: white;
+}
+
+textarea[name="stage-comments"], textarea[name="project-comments"] {
+    width: 100%;
+    height: 10em;
+}
+
+p[id="feedback"] > a {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 1px 3px 10px black;
+    background: #00ff0a;
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 80em) {
+
+    aside {
+        width: 50%;
+    }
+
+    main {
+        width: 50%;
+    }
+
+    main > article {
+        width: 90%;
+    }
+
+    section.related {
+        -webkit-display: block;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 50em) {
+
+    main {
+        width: 100%;
+        padding: 0;
+    }
+
+    header > nav > ul > li {
+        position: static;
+        background: white;
+        text-align: center;
+        text-shadow: 5px 2px 3px red;
+        width: 100%;
+        display: block;
+        float: left;
+        padding: 8px;
+        list-style: none;
+    }
+
+    header > nav > ul {
+        position: absolute;
+        top: 0;
+    }
+
+    body > header > form {
+        position: fixed;
+        padding: 10px;
+        background: white;
+        right: 0;
+        top: 0;
+    }
+
+    aside {
+        display: none;
+    }
+
+}
